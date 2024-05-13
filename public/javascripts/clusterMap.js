@@ -1,10 +1,17 @@
 mapboxgl.accessToken = mapToken;
+// const map = new mapboxgl.Map({
+//   container: "cluster-map",
+//   // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+//   style: "mapbox://styles/mapbox/light-v10",
+//   center: [-103.5917, 40.6699],
+//   zoom: 3,
+// });
 const map = new mapboxgl.Map({
   container: "cluster-map",
   // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
   style: "mapbox://styles/mapbox/light-v10",
-  center: [-103.5917, 40.6699],
-  zoom: 3,
+  center: [104.990963, 12.565679], // Adjusted coordinates for Cambodia
+  zoom: 7, // Zoom level adjusted for better view of Cambodia
 });
 
 map.addControl(new mapboxgl.NavigationControl());
